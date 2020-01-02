@@ -31,6 +31,7 @@ public class Oauth2BindWithScribeController {
 
     private static final String CLIENT_ID = "c84e3e988d00b01a3cba";
     private static final String CLIENT_SECRET = "ecd565c42e2ed0298e916e5d0dad8ad9733d4db1";
+    private static final String CALLBACK_URL = "http://localhost:8080/callback";
 
     private OAuth20Service githubOAuthService = new ServiceBuilder(CLIENT_ID).apiSecret(CLIENT_SECRET).build(GitHubApi.instance());
 
@@ -47,6 +48,7 @@ public class Oauth2BindWithScribeController {
     public String redirectToGithub() {
         Map<String, String> paramMap = new HashMap<>();
         paramMap.put("client_id", CLIENT_ID);
+        paramMap.put("redirect_uri", CALLBACK_URL);
         return "redirect:" + githubOAuthService.getAuthorizationUrl(paramMap);
     }
 
