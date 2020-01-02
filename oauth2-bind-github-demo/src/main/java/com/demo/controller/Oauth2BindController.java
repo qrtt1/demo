@@ -34,6 +34,7 @@ public class Oauth2BindController {
 
     private static final String CLIENT_ID = "c84e3e988d00b01a3cba";
     private static final String CLIENT_SECRET = "ecd565c42e2ed0298e916e5d0dad8ad9733d4db1";
+    private static final String CALLBACK_URL = "http://localhost:8080/callback";
 
     private ObjectMapper objectMapper = new ObjectMapper()
             .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false)
@@ -46,7 +47,7 @@ public class Oauth2BindController {
 
     @RequestMapping("/redirectToGithub")
     public String redirectToGithub() {
-        return "redirect:https://github.com/login/oauth/authorize?client_id=" + CLIENT_ID;
+        return "redirect:https://github.com/login/oauth/authorize?client_id=" + CLIENT_ID + "&redirect_uri=" + CALLBACK_URL;
     }
 
     @RequestMapping("/callback")
