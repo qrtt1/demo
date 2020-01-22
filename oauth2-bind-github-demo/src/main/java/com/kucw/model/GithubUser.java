@@ -1,4 +1,4 @@
-package com.demo.model;
+package com.kucw.model;
 
 import java.io.Serializable;
 

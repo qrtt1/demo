@@ -9,7 +9,7 @@
 		<relativePath/>
 	</parent>
 
-	<groupId>com.demo</groupId>
+	<groupId>com.kucw</groupId>
 	<artifactId>oauth2-bind-github</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>oauth2-bind-github</name>

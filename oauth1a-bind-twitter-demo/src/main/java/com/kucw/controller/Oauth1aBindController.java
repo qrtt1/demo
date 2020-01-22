@@ -1,6 +1,6 @@
-package com.demo.controller;
+package com.kucw.controller;
 
-import com.demo.model.TwitterUser;
+import com.kucw.model.TwitterUser;
 import com.github.scribejava.core.services.HMACSha1SignatureService;
 import com.google.common.base.Splitter;
 import org.apache.http.HttpEntity;

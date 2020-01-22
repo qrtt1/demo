@@ -1,6 +1,6 @@
-package com.demo.controller;
+package com.kucw.controller;
 
-import com.demo.model.GithubUser;
+import com.kucw.model.GithubUser;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.github.scribejava.apis.GitHubApi;

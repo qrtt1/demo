@@ -9,7 +9,7 @@
 		<relativePath/>
 	</parent>
 
-	<groupId>com.demo</groupId>
+	<groupId>com.kucw</groupId>
 	<artifactId>oauth1a-bind-twitter</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>oauth1a-bind-twitter</name>
