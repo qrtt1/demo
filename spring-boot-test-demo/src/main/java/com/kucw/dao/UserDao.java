@@ -44,6 +44,6 @@ public class UserDao {
     }
 
     public void print() {
-        System.out.println("This is user dao");
+        namedParameterJdbcTemplate.query("SELECT * FROM user", new HashMap<>(), USER_MAPPER).forEach(System.out::println);
     }
 }
